@@ -12,10 +12,11 @@ const image=require('./controllers/image');
 const db=knex({
   client: 'pg',
   connection: {
-    host : 'postgresql-concave-29851',
-    user : 'postgres',
+    connectionString : process.env.DATABASE_URL,
+    ssl: true,
+    /*user : 'postgres',
     password : 'test',
-    database : 'smart_brain'
+    database : 'smart_brain'*/
   }
 });
 
