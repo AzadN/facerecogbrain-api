@@ -16,9 +16,6 @@ const db=knex({
 	ssl: {
 	rejectUnauthorized: false
 	}
-    /*user : 'postgres',
-    password : 'test',
-    database : 'smart_brain'*/
   }
 });
 
