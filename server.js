@@ -35,7 +35,7 @@ app.get('/', (req, res)=>{
 	res.send('It is working'); 
 })
 
-app.post('/signin', (req,res)=> {signin.handleSignin(req,res,db,bcrypt)});
+app.post('/signin', (req, res)=> {signin.handleSignin(req,res,db,bcrypt)});
 
 app.post('/register', (req, res)=> {register.handleRegistration(req,res,db,bcrypt)}); //Dependency injection
 
