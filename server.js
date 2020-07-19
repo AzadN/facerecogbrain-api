@@ -32,7 +32,7 @@ app.use(express.json());
 //1. Necessity of looping through all user data for verificaation.
 //2. Non-persistent data since root GET request leads to recreation of database variable.
 app.get('/', (req, res)=>{
-	res.send(database.users); 
+	res.send('It is working'); 
 })
 
 app.post('/signin', (req,res)=> {signin.handleSignin(req,res,db,bcrypt)});
